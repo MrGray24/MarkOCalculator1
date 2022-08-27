@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiden Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<head>
+<body>
+
+<h1 id = "topText" class="title"> Number of Maidens Mark Ouyang Has Calculator </h1>
+
+<table class="calculator">
+    <tr>
+        <td colspan="3">
+            <input id = "result" class="display-box" type="text" disabled>
+        </td>
+        <td>
+            <input id = "btn" onclick="clearScreen()" class="button" value="C" type="button" >
+        </td>
+    </tr>
+
+    <tr>
+        <td> <input value="1" onclick="display('1')" class="button" type="button"></td>
+        <td> <input value="2" onclick="display('2')"class="button" type="button"></td>
+        <td> <input value="3" onclick="display('3')"class="button" type="button"></td>
+        <td> <input value="/" onclick="display('/')"class="button" type="button"></td>
+    </tr>
+
+    <tr>
+        <td> <input value="4" onclick="display('4')"class="button" type="button"></td>
+        <td> <input value="5" onclick="display('5')"class="button" type="button"></td>
+        <td> <input value="6" onclick="display('6')"class="button" type="button"></td>
+        <td> <input value="-" onclick="display('-')"class="button" type="button"></td>
+    </tr>
+
+    <tr>    
+        <td> <input value="7" onclick="display('7')"class="button" type="button"></td>
+        <td> <input value="8" onclick="display('8')"class="button" type="button"></td>
+        <td> <input value="9" onclick="display('9')"class="button" type="button"></td>
+        <td> <input value="+" onclick="display('+')"class="button" type="button"></td>
+    </tr>
+
+    <tr>
+        <td> <input value="." onclick="display('.')"class="button" type="button"></td>
+        <td> <input value="0" onclick="display('0')"class="button" type="button"></td>
+        <td> <input id = "btn" value="=" onclick="calculate()" class="button" type="button"></td>
+        <td> <input value="*" onclick="display('*')"class="button" type="button" ></td>
+    </tr>
+
+</table>
+
+<p> <input value = "*click on me to change modes ^w^" onclick="changeMode()"class = "funnyButton" type="button"></p>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html> 
